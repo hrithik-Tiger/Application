@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './Dashboard/dashboard/dashboard.component';
@@ -16,7 +16,8 @@ import { LoginComponent } from './LoginComponent/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(enviroment.firebase)
+    AngularFireModule.initializeApp(enviroment.firebase),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
